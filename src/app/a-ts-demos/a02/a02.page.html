@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab1" text="返回"></ion-back-button>
+    </ion-buttons>
+    <ion-title>a02</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" padding>
+  <div>
+    <button class="button" (click)="click1()">2-1: 基本数据类型</button>
+    <button class="button" (click)="click2()">2-2: 数组</button>
+    <button class="button" (click)="click3()">2-3: 元组</button>
+  </div>
+  <br />
+  <div id="container">
+    <div id="mydiv"></div>
+  </div>
+</ion-content>

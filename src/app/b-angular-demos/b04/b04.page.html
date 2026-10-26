@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab2" text="后退"></ion-back-button>
+    </ion-buttons>
+    <ion-title>【b04】内置指令</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <p style="color:red;">*ngFor 基本用法</p>
+  <p>所有学生：</p>
+  <div *ngFor="let student of student">
+    {{student}}
+  </div>
+  <br>
+  <p style="color:red;">*ngIf 基本用法</p>
+  <div *ngIf="age">
+    张三的年龄为：{{age}}
+  </div>
+  <div *ngIf="grade">
+    张三的成绩为：{{grade}}
+  </div>
+</ion-content>

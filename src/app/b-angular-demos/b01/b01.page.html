@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab2" text="返回"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{current}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="mydiv">
+    <p>{{current}}</p>
+    <p style='margin-top:10px;font-size:14px;'>
+      Angular 是一种以【组件】为中心的架构,而不是以 HTML 为中心。
+    </p>
+  </div>
+  <br/>
+  <div id='mydiv'></div>
+</ion-content>

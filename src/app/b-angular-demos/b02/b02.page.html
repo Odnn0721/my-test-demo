@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/tab2" text="后退"></ion-back-button>
+    </ion-buttons>
+    <ion-title>【b02】单向绑定</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <button class="button" (click)="start()">启动定时器</button>
+    <button class="button" (click)="stop()">停止定时器</button>
+    <button class="button" (click)="switchDiv()">切换 div 的显示和隐藏</button>
+  </div>
+  <hr>
+  <div id='div1'>
+    <img [src]='imgSrc' style="width:50px;">
+    <table border='1'>
+      <tr>
+        <td>第 1 行第 1 列</td>
+        <td [attr.colspan]='colspanProperty'>第 1 行第 2、3 列</td>
+        <td>第 1 行第 4 列</td>
+      </tr>
+      <tr>
+        <td>第 2 行第 1 列</td>
+        <td>第 2 行第 2 列</td>
+        <td>第 2 行第 3 列</td>
+        <td>第 2 行第 4 列</td>
+      </tr>
+    </table>
+    <br>
+    <p [class]='classProp'> 哈哈,看我的颜色和字体大小变化 </p>
+  </div>
+</ion-content>
